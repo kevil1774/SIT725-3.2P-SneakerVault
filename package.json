@@ -1,0 +1,24 @@
+
+{
+  "name": "sneakervault",
+  "version": "1.0.0",
+  "description": "A modern sneaker collection and discovery web application built using Express and Materialize CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "sneakers",
+    "sneakervault",
+    "express",
+    "materialize",
+    "web-application"
+  ],
+  "author": "Student",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

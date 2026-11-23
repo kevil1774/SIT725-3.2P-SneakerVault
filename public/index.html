@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SneakerVault | Discover Your Style</title>
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-wrapper container">
+
+            <a href="#home" class="brand-logo">
+                SNEAKER<span>VAULT.</span>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">THE SNEAKER CULTURE</p>
+
+                <h1>
+                    STEP INTO<br>
+                    YOUR <span>STYLE.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover iconic sneakers, explore popular brands
+                    and find your next favourite pair.
+                </p>
+
+                <a href="#collection" class="btn explore-btn">
+                    EXPLORE COLLECTION
+                </a>
+
+            </div>
+
+            <!-- 3D Hero Sneaker Image -->
+            <div class="hero-image">
+
+                <img
+                    src="images/hero-sneaker.jpg"
+                    alt="SneakerVault premium 3D featured sneaker"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sneaker Collection -->
+    <section class="sneaker-collection container" id="collection">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">CURATED FOR YOU</p>
+                <h2>Explore Collection</h2>
+            </div>
+
+            <p class="collection-subtitle">
+                Find your perfect pair.
+            </p>
+
+        </div>
+
+
+        <!-- Search and Brand Filter -->
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search sneakers or brands..."
+            >
+
+            <select id="brandFilter">
+
+                <option value="All">All Brands</option>
+                <option value="Nike">Nike</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Puma">Puma</option>
+                <option value="New Balance">New Balance</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Sneaker Cards Loaded From REST API -->
+        <div class="row" id="sneakerContainer">
+
+            <p class="loading">Loading sneakers...</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Brands -->
+    <section class="brands-section" id="brands">
+
+        <div class="container">
+
+            <p class="eyebrow">THE BIG NAMES</p>
+
+            <h2>Popular Brands</h2>
+
+            <div class="brand-list">
+
+                <span>NIKE</span>
+                <span>ADIDAS</span>
+                <span>JORDAN</span>
+                <span>PUMA</span>
+                <span>NEW BALANCE</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section container" id="about">
+
+        <p class="eyebrow">OUR STORY</p>
+
+        <h2>
+            More than sneakers.<br>
+            It's a <span>culture.</span>
+        </h2>
+
+        <p>
+            SneakerVault brings sneaker enthusiasts together
+            through a curated collection of iconic designs,
+            popular brands and everyday styles.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <h5>SNEAKER<span>VAULT.</span></h5>
+
+            <p>Discover. Explore. Collect.</p>
+
+            <p>© 2026 SneakerVault. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Materialize JavaScript -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
