@@ -1,24 +1,28 @@
 
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
+const connectDB = require('./config/database');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Middleware to serve frontend files
+// Connect to MongoDB
+connectDB();
+
+// Middleware
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Import sneaker routes
+// Sneaker API routes
 const sneakerRoutes = require('./server/routes/sneakerRoutes');
-
-// Register API route
 app.use('/api/sneakers', sneakerRoutes);
 
-// Start Express server
+// Start server
 app.listen(PORT, () => {
     console.log('================================');
     console.log('     SNEAKERVAULT SERVER');
     console.log('================================');
     console.log(`Server running at http://localhost:${PORT}`);
-    console.log(`Sneaker API: http://localhost:${PORT}/api/sneakers`);
 });
